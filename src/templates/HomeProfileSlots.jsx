@@ -1,10 +1,12 @@
-function HomeProfileSlots (){
+import logo from "../data/profileicon.png"
+
+function HomeProfileSlots ({name, age,image, desc}){
     return(
-        <section class="slot">
-            <img src="" alt="profile pic"/>
-            <h1>Name</h1>
-            <h3>Age</h3>
-            <p>Little desc</p>
+        <section>
+            <img src={logo} alt="profile pic"/>
+            <h1>{name}</h1>
+            <h3>{age}</h3>
+            <p>{desc}</p>
             <button>More...</button>
         </section>
     )
