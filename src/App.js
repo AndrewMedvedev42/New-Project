@@ -17,16 +17,15 @@ function App() {
         return (
             <Router>
               <Switch>
+                  <Route path={`/${name}`}>
+                      <UserProfilePage id={id} name={name} age={age} desc={desc}/>
+                  </Route>
                   <Route exact path="/">
                       <HomeProfileSlots id={id} name={name} age={age}/>
                   </Route>
-                  <Route path={`/${name}`}>
-                      <UserProfilePage id={id} name={name} age={age} desc={desc}/>
-                      
-                  </Route>
               </Switch>
           </Router>
-            )
+        )
         })
     )
 }
