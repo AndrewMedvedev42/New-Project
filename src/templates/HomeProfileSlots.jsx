@@ -1,15 +1,15 @@
-import logo from "../data/profileicon.png"
+import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 
-function HomeProfileSlots ({name, age,image, desc}){
+function HomeProfileSlots ({id, name, age, desc}){
+    console.log(`Name: ${name}, Their ID: ${id}`);
     return(
-        <section>
-            <img src={logo} alt="profile pic"/>
+        <div key={id} className="item">
             <h1>{name}</h1>
             <h3>{age}</h3>
-            <p>{desc}</p>
-            <button>More...</button>
-        </section>
-    )
-}
+            <Link to={`/${name}`}>
+                <button>More...</button>
+            </Link>
+        </div>)}
 
 export default HomeProfileSlots
