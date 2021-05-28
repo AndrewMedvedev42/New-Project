@@ -1,6 +1,7 @@
 import  HomeProfileSlots  from "./templates/HomeProfileSlots";
-import React, {useState} from 'react';
+import React from 'react';
 import data  from "./data/slot_data.js";
+
 import UserProfilePage from "./templates/UserProfilePage";
 import {
   BrowserRouter as Router,
@@ -12,22 +13,25 @@ import {
 function App() {
   const [slots, setSlots] = React.useState(data)
   return (
-        slots.map((induvidual)=>{
-        const {id ,name, age, desc} = induvidual
-        return (
             <Router>
               <Switch>
-                  <Route path={`/${name}`}>
-                      <UserProfilePage id={id} name={name} age={age} desc={desc}/>
-                  </Route>
-                  <Route exact path="/">
-                      <HomeProfileSlots id={id} name={name} age={age}/>
+                  {
+                    slots.map((induvidual)=>{
+                      const {id} = induvidual
+                          return (
+                            <Route path={`/${id}`}>
+                              <UserProfilePage id={id}/>
+                            </Route>
+                          )})
+                  }
+                  <Route path="/">
+                      <HomeProfileSlots/>
                   </Route>
               </Switch>
           </Router>
         )
-        })
-    )
 }
+
+
 
 export default App;
