@@ -25,4 +25,5 @@
   div {
     width: 90%; }
     div footer {
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center; } }
