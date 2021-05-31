@@ -34,4 +34,12 @@ $SedondColor:#66c2ff;
     }
 }
 
+@media screen and (max-width: 992px) {
+    div{
+        width: 90%;
+        footer{
+            flex-direction: column;
+        }
+    }
+  }
 

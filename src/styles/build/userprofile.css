@@ -20,3 +20,9 @@
 .UserProfile div footer {
   display: flex;
   justify-content: space-evenly; }
+
+@media screen and (max-width: 992px) {
+  div {
+    width: 90%; }
+    div footer {
+      flex-direction: column; } }
