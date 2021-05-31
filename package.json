@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "sass": "node-sass ./src/styles/sass/index.scss ./src/styles/build/index.css"
+    "scss": "node-sass --watch ./src/styles/sass/ -o ./src/styles/build/"
   },
   "eslintConfig": {
     "extends": [

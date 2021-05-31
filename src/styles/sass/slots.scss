@@ -1,0 +1,44 @@
+$MainColor:#008ae6;
+$SedondColor:#66c2ff;
+
+body{
+    background-color:$SedondColor;
+    section{
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        .slotCard{
+            font-family: Arial;
+            text-align: center;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: $MainColor 5px 5px 0px;
+            transition: 0.5s;
+            img{
+                width: 70px;
+                height: auto;
+            }
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                opacity: 0.5;
+            }
+            button{
+                border:none;
+                border-radius: 25px;
+                padding: 1rem 2rem;
+            }
+            button:hover{
+                opacity: 0.5;
+            }
+        }
+        .slotCard:hover{
+            transform: translateY(0.5rem);
+            box-shadow: $MainColor 10px 10px 0px;
+        }
+
+    }
+}

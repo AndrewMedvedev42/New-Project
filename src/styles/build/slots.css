@@ -1,0 +1,31 @@
+body {
+  background-color: #66c2ff; }
+  body section {
+    margin: 2rem;
+    display: flex;
+    align-items: center; }
+    body section .slotCard {
+      font-family: Arial;
+      text-align: center;
+      margin: 1rem;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 50px;
+      box-shadow: #008ae6 5px 5px 0px;
+      transition: 0.5s; }
+      body section .slotCard img {
+        width: 70px;
+        height: auto; }
+      body section .slotCard h1 {
+        font-size: 2rem; }
+      body section .slotCard p {
+        opacity: 0.5; }
+      body section .slotCard button {
+        border: none;
+        border-radius: 25px;
+        padding: 1rem 2rem; }
+      body section .slotCard button:hover {
+        opacity: 0.5; }
+    body section .slotCard:hover {
+      transform: translateY(0.5rem);
+      box-shadow: #008ae6 10px 10px 0px; }
