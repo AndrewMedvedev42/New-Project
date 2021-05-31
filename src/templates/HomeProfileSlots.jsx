@@ -5,6 +5,20 @@ import "../styles/build/slots.css"
 
 function HomeProfileSlots (){
     const [slots] = React.useState(data)
+
+    function myFunction(){
+        pay();
+        cls();
+    }
+
+    function cls() {
+        console.log("bye")
+    }
+
+    function pay() {
+        localStorage.setItem('bgcolor', 'red')
+    }
+
     return(
         <section>
             {slots.map((induvidual)=>{
@@ -16,7 +30,7 @@ function HomeProfileSlots (){
                         <h3>Age: {age}</h3>
                         <p>{litleDesc}</p>
                         <Link to={`/${name}`}>
-                            <button>More...</button>
+                            <button onClick={myFunction}>More...</button>
                         </Link>
                     </div>)})}
         </section>

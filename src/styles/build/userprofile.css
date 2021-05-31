@@ -1,0 +1,22 @@
+.UserProfile div article, .UserProfile div footer {
+  font-family: Arial;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: #008ae6 5px 5px 0px;
+  transition: 0.5s; }
+  .UserProfile div article img, .UserProfile div footer img {
+    width: 100px;
+    height: auto; }
+  .UserProfile div article h1, .UserProfile div footer h1 {
+    font-size: 2rem; }
+  .UserProfile div article h2, .UserProfile div footer h2 {
+    font-size: 1.2rem; }
+  .UserProfile div article p, .UserProfile div footer p {
+    opacity: 0.5; }
+
+.UserProfile div footer {
+  display: flex;
+  justify-content: space-evenly; }

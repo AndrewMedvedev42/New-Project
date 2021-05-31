@@ -3,6 +3,7 @@ body {
   body section {
     margin: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center; }
     body section .slotCard {
       font-family: Arial;
@@ -10,7 +11,7 @@ body {
       margin: 1rem;
       padding: 2rem;
       background-color: white;
-      border-radius: 50px;
+      border-radius: 25px;
       box-shadow: #008ae6 5px 5px 0px;
       transition: 0.5s; }
       body section .slotCard img {
@@ -21,9 +22,15 @@ body {
       body section .slotCard p {
         opacity: 0.5; }
       body section .slotCard button {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 3px;
         border: none;
         border-radius: 25px;
-        padding: 1rem 2rem; }
+        padding: 1rem 2rem;
+        background-color: #008ae6;
+        transition: 0.5s; }
       body section .slotCard button:hover {
         opacity: 0.5; }
     body section .slotCard:hover {

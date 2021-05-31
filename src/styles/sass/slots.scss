@@ -6,6 +6,7 @@ body{
     section{
         margin: 2rem;
         display: flex;
+        justify-content: center;
         align-items: center;
         .slotCard{
             font-family: Arial;
@@ -13,7 +14,7 @@ body{
             margin: 1rem;
             padding: 2rem;
             background-color: white;
-            border-radius: 50px;
+            border-radius: 25px;
             box-shadow: $MainColor 5px 5px 0px;
             transition: 0.5s;
             img{
@@ -27,9 +28,15 @@ body{
                 opacity: 0.5;
             }
             button{
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+                letter-spacing: 3px;
                 border:none;
                 border-radius: 25px;
                 padding: 1rem 2rem;
+                background-color: $MainColor;
+                transition: 0.5s;
             }
             button:hover{
                 opacity: 0.5;
